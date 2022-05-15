@@ -11530,3 +11530,32 @@ html {
 .whitebg {
   background-color: white;
 }
+.aboutme {
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  margin-top: 50px;
+}
+.info1 {
+  width: 300px;
+}
+.v1 {
+  border-left: 6px solid black;
+  height: 125px;
+  margin: 0 30px;
+}
+.info1 tbody {
+
+}
+@media (max-width: 600px) {
+  .v1 {
+    display: none;
+  }
+  .col2 {
+    margin-top: 10px;
+  }
+  .aboutme {
+    flex-direction: column;
+    align-items: center;
+  }
+}
