@@ -51,4 +51,19 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    var lang = document.getElementsByClassName("lang");
+    for (var i = 0; i < lang.length; i++) {
+        lang[i].addEventListener("mouseover", function () {
+            var langText = this.getElementsByTagName("img")[0].alt;
+            var langBubble = document.createElement("div");
+            langBubble.className = "hoverBubble";
+            langBubble.innerHTML = langText;
+            this.appendChild(langBubble);
+        });
+        lang[i].addEventListener("mouseout", function () {
+            var langBubble = this.getElementsByClassName("hoverBubble")[0];
+            this.removeChild(langBubble);
+        });
+    }
 });
+

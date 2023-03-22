@@ -11544,8 +11544,36 @@ html {
   height: 125px;
   margin: 0 30px;
 }
-.info1 tbody {
+.hoverBubble {
+  background: #333333;
+  color: #ffffff;
+  padding: 5px;
+  position: absolute;
+  text-align: center;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+}
 
+.hoverBubble:after,
+.bubblePosition:after {
+  border: 8px solid transparent;
+  border-top-color: #333333;
+  bottom: 33px;
+  content: '';
+  height: 0px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  width: 0px;
+  rotate: 180deg;
 }
 @media (max-width: 600px) {
   .v1 {
